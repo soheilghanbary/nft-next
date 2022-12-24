@@ -1,0 +1,14 @@
+.navbar {
+  @apply flex items-center justify-between px-4 py-2 bg-secondary shadow-md rounded-lg;
+
+  .logo {
+    @apply flex items-center gap-2;
+  }
+
+  ul {
+    @apply hidden xl:flex items-center text-sm gap-1;
+    li {
+      @apply px-3 py-3 rounded-md hover:text-blue duration-200 font-medium cursor-pointer dark:hover:text-heading;
+    }
+  }
+}

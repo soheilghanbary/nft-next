@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// fonts
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap");
+
+// components
+@import "navbar";
+// init styles
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  // font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  // variant color
+  --blue-color: #6366f1;
+  --red-color: #f43f5e;
+  --green-color: #10b981;
+  --line-color: #e2e8f0;
+  // backgrounds
+  --primary-color: #f1f5f9;
+  --secondary-color: #ffffff;
+  // text colors
+  --body-color: #64748b;
+  --heading-color: #334155;
+  // shadow
+  --shadow-md: 0 4px 6px -1px #e2e8f0, 0 2px 4px -2px #e2e8f0;
+  --shadow-lg: 0 10px 15px -3px #e2e8f0, 0 4px 6px -4px #e2e8f0;
+  // border radius
+  --rounded-lg: 0.5rem;
+}
+
+.dark {
+  // variant color
+  --blue-color: #60a5fa;
+  --red-color: #f43f5e;
+  --green-color: #059669;
+  --line-color: #a8b3cf;
+  // backgrounds
+  --primary-color: #0e1217;
+  --secondary-color: #1c1f26;
+  // text colors
+  --body-color: #a8b3cf;
+  --heading-color: #ffffff;
+  // shadow
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  // border radius
+  --rounded-lg: 0.5rem;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+body {
+  @apply bg-primary text-body duration-150;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
